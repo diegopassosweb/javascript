@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa em JS</title>
+    <style> 
+    body {
+        background-color: rgba(0, 0, 255, 0.342); /* fundo de cor da pagina CSS*/
+        color: white; /* cor da letra da pagina CSS*/
+        font: normal 20pt Arial; /* tipo de fonte, tamanho e qual fonte CSS*/
+    }
+
+    h1 {
+        color: rgba(0, 0, 0, 0.24);
+    }
+    </style> <!-- tag para estilo -->
+</head>
+<body>
+    <h1>Ola, mundo!</h1> <!--- titulo de nivel 1 h1 HTML--->
+    <p>Novo paragrafo</p> <!-- <p> para criar um paragrafo HTML-->
+    <script>
+        
+        var n1 = Number(window.prompt('Digite um numero:')) //string//
+        var n2 = Number(window.prompt('Digite outro numero: ')) //string//
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) // Concatenação //
+        // (number) + (number) para adição //
+        // (string) + (string) para concatenação //
+
+        // String > Numero inteiro, Number.parseInt (n) //
+        // String > Numero real, Number.parseFloat (n) //
+        // Simplificado, Number(n) //
+
+        // Numero > String, String(n) //
+        // Numero > String, n.toString() //
+
+        // s.length = quantas caracteres a string tem //
+        // s.toUpperCase() tudo para 'MAIUSCULAS' //
+        // s.toLowerCase() tudo para 'minusculas' //
+        
+    </script>
+    
+</body>
+</html>
