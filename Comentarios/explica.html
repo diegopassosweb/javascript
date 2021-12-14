@@ -260,9 +260,9 @@ e para minusculas utilizar .toLowerCase()>
 
            5 == '5'
 
-            > var x = 5
+             var x = 5
 
-            > var y = '5'
+             var y = '5'
 
             typeof x
             //'number' //
@@ -279,11 +279,11 @@ e para minusculas utilizar .toLowerCase()>
            
         // Logicos //
 
-        ! // negação //
-        && // conjunção //
-        || // disjunção //
+        /! // negação //
+        /&& // conjunção //
+        // || // disjunção //
 
-        ! true ou false
+        //B! true (ou) false
         ! true //==> false
         ! false //==> true
 
@@ -370,6 +370,95 @@ e para minusculas utilizar .toLowerCase()>
         r
         'MAIOR'
 
+        // AULA 09 Introducão ao DOM // 
+
+        /* Questão 01: Qual é a diferença entre usar =, == e === em codigos escritos em JS?
+        resposta: 
+        1º O = é um operador de atribuição, serve para atribuir um valor a uma variável
+        2º O == é um operador relacional, serve para comparar se duas coisas são iguais
+        3º O === igualdade restrita.
+
+        Questao 002: Em uma mesma expressão, temos os operadores || e &&, quem eu resolvo primeiro?
+        resposta: Primeiro séria o operador &&(conjunção) depois o ||(disjunção).
+
+        Questao 003: Sabe usar o operador ternario para colocar um entre dois valores em uma variavel?
+        resposta:  
+        */
+        var gostouVideo = opiniao == true ? 'Ele(a) gostou do Vídeo':'Ele(a) não gostou do video'
+
+        /* Arvore DOM */
+
+        /* 
+
+                    window
+        location --- document ---- history
+                     html
+         head  ---   body
+meta --- tittle     
+
+            h1 --- p --- p --- div
+                        strong
+        */
+
+        /* Aula 10 */
+
+        //Questao 01: O que é DOM?
+        //Resposta: Document Object Model
+
+        //Questao 02: Arvore DOM simples:
+        //Resposta: children do window alguns deles são:  document, history, location.
+
+        //Questao 03: O que sao elementos Parent e Chield de um arvore?
+        //Resposta: Parents são aqueles que dão origem aos elementos Child e os elementos Child também podem ser Parents de outros elementos!
+
+        //Questao 04: Principais cinco metodos de selecionar  elementos DOM no JS?
+        //Resposta: Por Nome, Por Id, Por Classe, Por Seletor, Por Marca
+    	
+        // Tecnicas elementos
+        TagName
+        id  
+        Name 
+        ClassName 
+        querySelector
+
+        // AULA 11
+
+      
+        //Questao 01: Consegue citar 3 eventros que podem aconter com elementos DOM de um site?
+        //Resposta: onclikc, onmouseenter, onmousedown
+
+        //Questao 02:
+        //O que é uma função? Como criar função em JS?
+        //Resposta: função e um bloco de comando que e executado sequecialmente, a função e criada com o comando function
+
+        //Questao 03:
+        //Sabe como pegar os valores de uma caixa de texto e fazer cálculos com eles?
+
+        /*
+        <body>
+            <h1>Somando Valores</h1>
+            <input type="number" name="txtn1" id="txtn1" /> +
+            <input type="number" name="txtn2" id="txtn2" />
+            <input type="button" value="Somar" onclick="somar()" />
+
+            <div id="res">Resultado</div>
+
+            <script>
+            function somar() {
+                var tn1 = document.getElementById("txtn1");
+                var tn2 = document.querySelector("input#txtn2");
+                var res = document.querySelector("div#res");
+                var n1 = Number(tn1.value);
+                var n2 = Number(tn2.value);
+
+                var s = n1 + n2;
+
+                res.innerHTML = `A soma entre ${n1} e ${n2} é igual a   <strong>${s}</strong>`;
+            }
+
+            */
+            </script>
+        </body>
 
            
 
