@@ -2,8 +2,10 @@
 <!DOCTYPE html>
 
 
- <!--Nessa linha eu defino a linguagem do meu codigo do site-->
-<html lang="pt-br"></html>
+<!--Nessa linha eu defino a linguagem do meu codigo do site-->
+<html lang="pt-br">
+
+</html>
 
 <!---
 <Para criar uma variavel, é necessario usar o var, let ou const antes>
@@ -43,244 +45,245 @@ e para minusculas utilizar .toLowerCase()>
     function
 -->
 
-   
+
 <!--no head, fica a cabeça do meu site, toda a config dele-->
- <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="Aula dois" content="itens da minha segunda aula de js">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Segunda aula de JS </title>
 
-<!--No style, eu chamo o CSS e mudo o estilo do meu site-->
-<style>
-/* Esta é uma maneira de comentar dentro do CSS */
-        body{
+    <!--No style, eu chamo o CSS e mudo o estilo do meu site-->
+    <style>
+        /* Esta é uma maneira de comentar dentro do CSS */
+        body {
             font-family: sans-serif;
-            font: normal ;
+            font: normal;
             background-color: rgb(170, 169, 170);
-            }
+        }
 
         h1 {
             color: rgb(255, 255, 20);
-                  }
-</style>
+        }
+    </style>
 
 </head>
 
 
 <body>
-<!--Dentro do body, é onde fiaca o conteudo do meu site, inclusive os scripts-->    
- 
-        <h1>Ola Mundo</h1>
-        <p> Ja me livrei da maldiçao</p>
+    <!--Dentro do body, é onde fiaca o conteudo do meu site, inclusive os scripts-->
 
-<script>
-    /*Todo script tem que estar dentro da chave de script*/
+    <h1>Ola Mundo</h1>
+    <p> Ja me livrei da maldiçao</p>
 
-            //Esse comentario so funciona dentro da chave de script
+    <script>
+        /*Todo script tem que estar dentro da chave de script*/
 
-            //O alert, serve para criar um alerta na pagina
-            //alert('Olá Mundo!')
+        //Esse comentario so funciona dentro da chave de script
 
-            //O confirm, cria um alerta com a opçao de ok ou cancelar
-            //confirm('Esta gostando do Curso?')
-            
-            //O prompt cria um alerta com intereçao 
-           
-        var n1 = Number (prompt('Digite um numero: '))
-        var n2 = Number (prompt('Digite outro numero: '))
-        var s  = n1 + n2
+        //O alert, serve para criar um alerta na pagina
+        //alert('Olá Mundo!')
+
+        //O confirm, cria um alerta com a opçao de ok ou cancelar
+        //confirm('Esta gostando do Curso?')
+
+        //O prompt cria um alerta com intereçao 
+
+        var n1 = Number(prompt('Digite um numero: '))
+        var n2 = Number(prompt('Digite outro numero: '))
+        var s = n1 + n2
         alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
 
-            /* Para chamar uma variavel ou utilizar algum sinal apos o texto
-               dentro de uma frase, eu tenho que utilizar o sinal de + 
-               que no JS significa CONCATENAÇÃO ou ADIÇAO
-            */
+        /* Para chamar uma variavel ou utilizar algum sinal apos o texto
+           dentro de uma frase, eu tenho que utilizar o sinal de + 
+           que no JS significa CONCATENAÇÃO ou ADIÇAO
+        */
 
-            /* Pra converter uma string para number posso utilizar o Number apos o =
-            ou o contrario ou n.toString() para fazer o numero ser string */
-            
+        /* Pra converter uma string para number posso utilizar o Number apos o =
+        ou o contrario ou n.toString() para fazer o numero ser string */
 
-            /* Utilizar o metodo abaixo para nao precisar concatenar
-            O aluno ${nome da variave} com ${nome da variave} anos,
-            tirou  a nota ${nome da variave} no curso de JS` (utilizar craze)
-            */
 
-            // Operadores Aritmeticos AULA 7 PART 1 //
+        /* Utilizar o metodo abaixo para nao precisar concatenar
+        O aluno ${nome da variave} com ${nome da variave} anos,
+        tirou  a nota ${nome da variave} no curso de JS` (utilizar craze)
+        */
 
-            /*
-            Questão 01: Como é possivel guardar o valor digitado em um prompt() dentro de uma variavel?
+        // Operadores Aritmeticos AULA 7 PART 1 //
 
-            Resposta: Armazenando o resultado dentro de uma variável.
-            */
-            Ex: var tempoDuração = Number.parseInt(window.prompt('Qual é o tempo de duração da aula em segundos'))
+        /*
+        Questão 01: Como é possivel guardar o valor digitado em um prompt() dentro de uma variavel?
 
-             /*
-             Questão 02: Como fazer com que o numero digitado em um prompt() possa ser usado em calculos?
+        Resposta: Armazenando o resultado dentro de uma variável.
+        */
+        Ex: var tempoDuração = Number.parseInt(window.prompt('Qual é o tempo de duração da aula em segundos'))
 
-            Resposta: Consegue utilizar o número digitado em uma conta, mas o valor lido deve ser convertido para um tipo numérico, como float ou int.
-            */
+        /*
+        Questão 02: Como fazer com que o numero digitado em um prompt() possa ser usado em calculos?
 
-            /*
-            Questão 03: Como transformar um texto todo para letras MAISCULAS?
-            Resposta: Sim
-            Demonstração:
-            */
-            var nome = window.prompt('Digite o seu nome: ').toUpperCase()
+       Resposta: Consegue utilizar o número digitado em uma conta, mas o valor lido deve ser convertido para um tipo numérico, como float ou int.
+       */
 
-            /*
-            Questão 04: Como mostrar um numero formatado como um valor monetario?
-            R: Sim
-            Demonstração:
-            */
-            var preco = 199.50
+        /*
+        Questão 03: Como transformar um texto todo para letras MAISCULAS?
+        Resposta: Sim
+        Demonstração:
+        */
+        var nome = window.prompt('Digite o seu nome: ').toUpperCase()
 
-            preco = preco.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
-            window.prompt(`${preco}`)
+        /*
+        Questão 04: Como mostrar um numero formatado como um valor monetario?
+        R: Sim
+        Demonstração:
+        */
+        var preco = 199.50
 
-            
-            /* 
-            5 + 2 --> 7 
-            5 - 2 --> 3 
-            5 * 2 --> 10 
-            5 / 2 --> 2.5 
-            5 % 2 --> 1
-            5 ** 2 --> 25
+        preco = preco.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })
+        window.prompt(`${preco}`)
 
-            5 + 3 / 2 = 6.5 primeiro a divisao
-            (5+ 3) / 2 = 4 ou em paratenses
-            */
 
-            /* Ordem de Precedencia 
+        /* 
+        5 + 2 --> 7 
+        5 - 2 --> 3 
+        5 * 2 --> 10 
+        5 / 2 --> 2.5 
+        5 % 2 --> 1
+        5 ** 2 --> 25
 
-            Primeiro ---> () Segundo ---> ** Terceiro --> * / e % Quarto --> + e - 
+        5 + 3 / 2 = 6.5 primeiro a divisao
+        (5+ 3) / 2 = 4 ou em paratenses
+        */
 
-            Primeiro --> > Segundo --> < Terceiro --> >=
+        /* Ordem de Precedencia 
 
-            Primeiro --> ! Segundo --> && Terceiro -->||
+        Primeiro ---> () Segundo ---> ** Terceiro --> * / e % Quarto --> + e - 
 
-            */
+        Primeiro --> > Segundo --> < Terceiro --> >=
 
-            // Atribuição simples //
+        Primeiro --> !(NOT) Segundo --> &&(AND) Terceiro -->|| (OR)
 
-            var a = 5 + 3 // 8 //
-            var b = a % 5 // 3 //
-            var c = 5 * b ** 2 // 45 //
-            var d = 10 - a / 2 // 6 //
-            var e = 6 * 2 / d // 2 //
-            var f = b % e + 4 / e // 3 //
+        */
 
-            // Auto-atribuiçoes // 
+        // Atribuição simples //
 
-            var n = 3
-            n = n + 4 
-            // 7 // 
-            n = n - 5
-            // 2 // 
-            n = n * 4
-            // 8 //
-            n = n / 2
-            // 4 //
-            n = n ** 2
-            // 16 // 
-            n = n % 5
-            // 1 //
+        var a = 5 + 3 // 8 //
+        var b = a % 5 // 3 //
+        var c = 5 * b ** 2 // 45 //
+        var d = 10 - a / 2 // 6 //
+        var e = 6 * 2 / d // 2 //
+        var f = b % e + 4 / e // 3 //
 
-            /* 
+        // Auto-atribuiçoes // 
 
-            n + 4 = 4 
-            n -= 5
-            n *= 4
-            n /= 2
-            n **= 2
-            n %= 5
+        var n = 3
+        n = n + 4
+        // 7 // 
+        n = n - 5
+        // 2 // 
+        n = n * 4
+        // 8 //
+        n = n / 2
+        // 4 //
+        n = n ** 2
+        // 16 // 
+        n = n % 5
+        // 1 //
 
-            */
+        /* 
 
-            // Incremento // 
+        n + 4 = 4 
+        n -= 5
+        n *= 4
+        n /= 2
+        n **= 2
+        n %= 5
 
-            var x = 5
-            x = x + 1
-            x = x - 1
+        */
 
-            x += 1 // simplificado   x++ ou pre incremento ++x //
-            x-= 1  // simplificado  x-- ou pre incremento --x //
+        // Incremento // 
 
-            /* AULA 8 Operadores PART 2 */
-           
-           /* Questao 01: Para que serve o operador % em JS? Seria para calcular porcentagem?
-            Resposta: Seria para calcular o resto da divisão
-            */
-            
-            5 % 2  // 1 //
+        var x = 5
+        x = x + 1
+        x = x - 1
 
-            /* Questao 02: 6 + 4 / 2 é igual a 5 ou 8 ?
-            Resposta: 8 pois primeiro se calcular a divisão em uma conta entre + e /
-            */
+        x += 1 // simplificado   x++ ou pre incremento ++x //
+        x -= 1  // simplificado  x-- ou pre incremento --x //
 
-            6 + 4 / 2 // 8 //
+        /* AULA 8 Operadores PART 2 */
 
-            /* Questao 03: Se uma variavel n está valendo 10 e executamos um n += 5, qual sera seu novo valor?
-            Resposta: 15 pois += 5 adiciona 5 ao valor anterior de n
-            */
-           var n = 10
-           n += 5 // 15 //
+        /* Questao 01: Para que serve o operador % em JS? Seria para calcular porcentagem?
+         Resposta: Seria para calcular o resto da divisão
+         */
 
-           /* Questao 04: Para que sevem os operadores ++ e -- ?
-           Resposta: Os operadores ++ e -- são utilizados após o nome de uma variável e servem para incrementar (++) ou decrementar (--) uma unidade da variável, 
-           ou seja, somar 1 ou subtrair 1 do valor da variável. */
+        5 % 2  // 1 //
 
-           var n = 10
-           n-- // 9 //
-           n++ // 10 //
+        /* Questao 02: 6 + 4 / 2 é igual a 5 ou 8 ?
+        Resposta: 8 pois primeiro se calcular a divisão em uma conta entre + e /
+        */
 
-           /* Operadores Relacionais */
-           
-           5 > 2  // true //                          // maior //
-           7 < 4  // false //                       //  menor  //
-           8 >= 8 // true //                      //  maior igual //
-           9 <= 7 // false //                        //  menor igual //
-           5 == 5 // true //                       //   igual  //
-           4 != 4 // false //                      // não igual //
+        6 + 4 / 2 // 8 //
 
-           preço >= 200.50 // o preço é maior ou igual a 200.50? //
-           idade < 18 // a idade é menor do que 18? //
-           curso == 'JavaScript' // o curso é JavaScript? //
-           n1 != n2 // o primeiro numero é diferente do segundo? //
+        /* Questao 03: Se uma variavel n está valendo 10 e executamos um n += 5, qual sera seu novo valor?
+        Resposta: 15 pois += 5 adiciona 5 ao valor anterior de n
+        */
+        var n = 10
+        n += 5 // 15 //
 
-           /* Identidade */
+        /* Questao 04: Para que sevem os operadores ++ e -- ?
+        Resposta: Os operadores ++ e -- são utilizados após o nome de uma variável e servem para incrementar (++) ou decrementar (--) uma unidade da variável, 
+        ou seja, somar 1 ou subtrair 1 do valor da variável. */
 
-           5 == 5 // true //
-           5 == '5' // true //
+        var n = 10
+        n-- // 9 //
+        n++ // 10 //
 
-           5 === '5' // false //
-           5 === 5 // true //
+        /* Operadores Relacionais */
 
-           5 == '5'
+        5 > 2  // true //                          // maior //
+        7 < 4  // false //                       //  menor  //
+        8 >= 8 // true //                      //  maior igual //
+        9 <= 7 // false //                        //  menor igual //
+        5 == 5 // true //                       //   igual  //
+        4 != 4 // false //                      // não igual //
 
-           5 == '5'
+        preço >= 200.50 // o preço é maior ou igual a 200.50? //
+        idade < 18 // a idade é menor do que 18? //
+        curso == 'JavaScript' // o curso é JavaScript? //
+        n1 != n2 // o primeiro numero é diferente do segundo? //
 
-             var x = 5
+        /* Identidade */
 
-             var y = '5'
+        5 == 5 // true //
+        5 == '5' // true //
 
-            typeof x
-            //'number' //
-            typeof y
-            //'string'//
-            x == y
-            //true //
-            x === y
-            //false//
-            x != y
-            //false//
-            x !== y
+        5 === '5' // false //
+        5 === 5 // true //
+
+        5 == '5'
+
+        5 == '5'
+
+        var x = 5
+
+        var y = '5'
+
+        typeof x
+        //'number' //
+        typeof y
+        //'string'//
+        x == y
+        //true //
+        x === y
+        //false//
+        x != y
+        //false//
+        x !== y
             //true//
-           
-        // Logicos //
 
-        /! // negação //
-        /&& // conjunção //
+            // Logicos //
+
+            / ! // negação //
+            /&& / / conjunção //
         // || // disjunção //
 
         //B! true (ou) false
@@ -297,28 +300,28 @@ e para minusculas utilizar .toLowerCase()>
         false || true //==> true 
         false || false //==> false
 
-         var a = 5
+        var a = 5
         undefined
-         var b = 8
+        var b = 8
         undefined
-        > true && false
+            > true && false
         false
-        > true && true
+            > true && true
         true
-        > false || false
+            > false || false
         false
-        > true || false
+            > true || false
         true
-        > true || true
+            > true || true
         true
-        > a > b && b % 2 == 0
+            > a > b && b % 2 == 0
         false
-        > a <= b || b / 2 == 2
+            > a <= b || b / 2 == 2
         true
 
         /* Ordem de execução
 
-        Primeiro --> ! Segundo --> && Terceiro -->||
+        Primeiro --> !(NOT) Segundo --> &&(AND) Terceiro -->||(OR)
 
         */
 
@@ -326,46 +329,46 @@ e para minusculas utilizar .toLowerCase()>
         estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP? //
         salario > 1500 && sexo != 'M' // o salario é acima de 15oo e nao é homem? // 
 
-        /* Ordem de precedencia */ 
+            /* Ordem de precedencia */
 
-        /*
+            /*
+    
+            Primeiro --> ()  Segundo --> ** Terceiro --> /
+    
+            Primeiro --> > Segundo --> < Terceiro --> >=
+    
+            Primeiro --> !(NOT) Segundo --> &&(AND) Terceiro -->||(OR)
+    
+            */
 
-        Primeiro --> ()  Segundo --> ** Terceiro --> /
+            // Ternario //
 
-        Primeiro --> > Segundo --> < Terceiro --> >=
+            ? e :
 
-        Primeiro --> ! Segundo --> && Terceiro -->||
-
-        */
-
-        // Ternario //
-
-        ? e :
-
-        teste ? true : false
+            teste ? true : false
 
         média >= 7.0 ? "Aprovado" : "Reprovado"
 
-        
-    
-         media > 7? 'APROVADO':'REPROVADO'
-        'REPROVADO'
-         media += 3
 
-        > media
+
+        media > 7 ? 'APROVADO' : 'REPROVADO'
+        'REPROVADO'
+        media += 3
+
+            > media
         8.5
-         media > 7? 'APROVADO':'REPROVADO'
+        media > 7 ? 'APROVADO' : 'REPROVADO'
         'APROVADO'
-         var x = 8
+        var x = 8
         //undefined//
-         var res = x % 2 == 0 ? 5: 9
-       // undefined//
-         x
+        var res = x % 2 == 0 ? 5 : 9
+        // undefined//
+        x
         8
 
         var idade = 19
-       // undefined //
-         var r = idade >= 18 ? 'MAIOR': 'MENOR'
+        // undefined //
+        var r = idade >= 18 ? 'MAIOR' : 'MENOR'
         // undefined //
         r
         'MAIOR'
@@ -384,7 +387,7 @@ e para minusculas utilizar .toLowerCase()>
         Questao 003: Sabe usar o operador ternario para colocar um entre dois valores em uma variavel?
         resposta:  
         */
-        var gostouVideo = opiniao == true ? 'Ele(a) gostou do Vídeo':'Ele(a) não gostou do video'
+        var gostouVideo = opiniao == true ? 'Ele(a) gostou do Vídeo' : 'Ele(a) não gostou do video'
 
         /* Arvore DOM */
 
@@ -413,17 +416,17 @@ meta --- tittle
 
         //Questao 04: Principais cinco metodos de selecionar  elementos DOM no JS?
         //Resposta: Por Nome, Por Id, Por Classe, Por Seletor, Por Marca
-    	
+
         // Tecnicas elementos
         TagName
-        id  
-        Name 
-        ClassName 
+        id
+        Name
+        ClassName
         querySelector
 
         // AULA 11
 
-      
+
         //Questao 01: Consegue citar 3 eventros que podem aconter com elementos DOM de um site?
         //Resposta: onclikc, onmouseenter, onmousedown
 
@@ -454,32 +457,59 @@ meta --- tittle
                 var s = n1 + n2;
 
                 res.innerHTML = `A soma entre ${n1} e ${n2} é igual a   <strong>${s}</strong>`;
-            }
-
+            
             */
-            </script>
-        </body>
+                                    // AULA 14 REPETIÇOES PART 2
+            /*DICIONARIO 
+            do == faz
+            while == enquanto
 
-           
+         /* Verifica e executa, mais utilizada
+         var c = 1 
+        while (c <= 6) {
+            console.log(`Passo ${c}`)
+            c++ //OBS c = c + 1
+         */
+
+         /* Executa e verifica
+        var c = 1
+        do {
+            console.log(`Passo ${c}`)
+            c++ 
+            }while (c <= 6)
+
+        /* 
+        console.log(`Vai começar...`)
+        for(var c = 1; c <= 5 ;c++ ) {
+        console.log(c)
+
+        }
+        console.log(`FIM`)
+        */
+    </script>
+</body>
 
 
 
 
 
-            
-            
 
 
 
-            
 
-    
-            
 
-             
+
+
+
+
+
+
+
+
 
 </script>
 
 
 </body>
+
 </html>
