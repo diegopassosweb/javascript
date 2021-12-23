@@ -1,6 +1,6 @@
 var num = [9,5,2,] //lembre-se a contagem dos vetores começa do 0 1,2
 num[3] = 6 //adicione o valor 6 na posição 3, criando a posição 3
-num.push(7) //adicione o valor 7 na ultima posição
+num.push(7) //adicione o valor 7 na ultima posição ou vetor indicado
 num.length //atributo, comprimento do vetor
 
 num.sort(function (a,b){return a-b}) //coloca os valores em ordem crescente
