@@ -4,15 +4,15 @@
 < menor
 >= maior igual
 <= menor igual
-== igual
+== igual             //= recebe,  === comparação
 != nao igual
 */
 
 /*
-5 > 2 --> true          5 == '5' --> true
-7 < 4 --> false         5 == 5 --> true
+5 > 2 --> true          5 == '5' --> true   
+7 < 4 --> false         5 == 5 --> true    (igual ==)
 8 >= 8 --> true         5 === '5' --> false
-9 <= 7 --> false        5 === 5 --> true
+9 <= 7 --> false        5 === 5 --> true  (comparação ===)
 5 == 5 --> true
 4 != 4 --> false
 */
@@ -41,7 +41,7 @@ idade >= 15 && idade <= 17 // a idade esta entre 15 e 17?
 estado == 'RJ' || estado == 'SP' // o estado é RJ ou SP?
 salario > 1500 && sexo != 'M' // o salario é acima de 1500 e nao é homem?
 
-//Odem de precedencia total
+//Ordem de precedencia total
 /*
 () parenteses  **potencia  / divisao
 > maior < menor >= menor igual
