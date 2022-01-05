@@ -14,12 +14,14 @@ section {
     margin: auto; /*centralizado*/
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.39);
 }
-div {
-    text-align: auto;
-    padding: 8px;
+select#flista {
+    width: 150px;
 }
+
+
 footer {
     color: white;
     text-align: center;
-    font-size: italic;
+    font-style: italic;
+    
 }
