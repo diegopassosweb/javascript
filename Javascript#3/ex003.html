@@ -21,17 +21,29 @@
     <p>Curso em Video</p>
 
     <script>
-        var n1 = Number.parseInt(window.prompt(`Digite um numero: `)) //String
-        var n2 = Number.parseInt(window.prompt(`Digite outro numero: `)) //String
+        var n1 = Number(window.prompt(`Digite um numero: `)) //String
+        var n2 = Number(window.prompt(`Digite outro numero: `)) //String
         //var n1 = window.prompt(`Digite um numero: `)
         //var n2 = window.prompt(`Digite outro numero: `)
         var s = n1 + n2
-        window.alert(`A soma dos valores é ` + s)// + Concatenaçao
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        //window.alert(`A soma dos valores é ` + String(s))// 
+        //+ Concatenaçao
+        // s.toString()
+        
         // (Number + number) para adiçao
         // (String + string) para concatenaçao
 
         // Number.parseInt(n) de String para Numero inteiro
         // Number.parseFloat(n) de String para numero real com virgula
+        // Number(n) simplificado
+
+        // String(n) para converter de String para numero.
+        // ou n.toStriong() o que eu quero converter para String
+
+        // s.length diz quantos caracteres a string tem
+        // s.toUpperCase() tudo para `MAIUSCULAS`
+        // s.toLowerCase() tudo para `minusculas`
     </script>
     
 </body>
