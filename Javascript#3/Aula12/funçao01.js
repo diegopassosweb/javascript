@@ -8,6 +8,7 @@ function parimp(n) {
 console.log(parimp(11))
 //let res = parimp(11)
 //console.log(res)
+
 /*
 function parimp(n) {
     if(n%2==0) {
