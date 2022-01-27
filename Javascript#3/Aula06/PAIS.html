@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SISTEMA DE PAÍS</title>
+</head>
+<body>
+    <h1>SISTEMA DE PAÍS</h1>
+    Digite seu país: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var p = String(window.document.getElementById('txtp').value)
+            // pais = String(p.value)
+            var res = window.document.getElementById('res')
+            res.innerHTML = `Vivendo em ${p} `
+            if(p == 'Brasil'|| p == 'brasil') {
+                res.innerHTML += `Voce é Brasileiro!`
+            } else {
+                res.innerHTML += `Voce é Estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
