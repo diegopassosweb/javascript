@@ -23,7 +23,6 @@ function calcular(n1,n2){
                 document.getElementById('resultado').innerHTML = `O resultado da divisao de ${n1} e ${n2} é ${calculo}`
                 break
             }
-           
             
 
     }
