@@ -1,0 +1,121 @@
+@media screen and(max-width: 760px){
+
+    heder{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+
+    form{
+        margin: 0 auto;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
+body {
+    background-color: rgb(76, 118, 233);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+Header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tittle{
+    flex-direction: column;
+    line-height: 10px;
+}
+li{
+    display: inline-block;
+    margin: 20px;
+}
+a{
+    color: white;
+}
+a:hover{
+    color: yellow;
+    transition: 0.3s all;
+}
+#Inscreva-se-btn{
+    border: 2px solid yellow;
+    padding: 10px;
+    border-radius: 15px;
+}
+#Inscreva-se-btn{
+    background-color: rgba(55, 55, 248, 0.37);
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+h2{
+    font-size: 56px;
+    line-height: 10px;
+
+}
+span{
+    color: yellow;
+}
+p{
+    line-height: 20px;
+    max-width: 500px;
+}
+img{
+    width: 600px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+/* NAO TA FUNCIONANDO */
+ form[type="submit"]{  
+    height: 50px;
+    width: 50%;
+    background-color: rgba(55, 55, 248, 0.37);
+    color: white;
+    font-weight: bold;
+}
+form[type="submit"]:hover{  
+   cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+    
+}
