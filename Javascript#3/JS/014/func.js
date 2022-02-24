@@ -1,3 +1,12 @@
+// function parimp(n){
+//     if(n%2==0){
+//         return 'par'
+//     } else {
+//         return 'impar'
+//     }
+// }
+// console.log(parimp(223))
+
 function parimp(n){
     if(n%2==0){
         return 'par'
@@ -5,4 +14,4 @@ function parimp(n){
         return 'impar'
     }
 }
-console.log(parimp(223))
+console.log(parimp(5))
