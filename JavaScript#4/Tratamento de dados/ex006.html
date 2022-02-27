@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de dados</title>
+    <style>
+        body {
+            background-color: rgb(105, 105, 173);
+            color: white;
+            font: normal 20pt Arial;
+            /* comentario */
+        }
+        h1{
+            color: rgb(225,212,22);
+        }
+    </style>
+</head>
+<body>
+        <h1>Tratamento de dados</h1>  <!--comentario CTRL + / -->
+        <p>Tratamento de dados</p>
+        <script>
+            
+           let nome = window.prompt('Qual o seu nome?') // pergunta resposta
+            window.alert('Prazer em te conhecer ' + nome + '!')
+
+            let n1 = Number(window.prompt('Digite um numero: ')) //string --> Number
+            let n2 = Number(window.prompt('Digite outro numero: ')) //string --> Number
+            let s = n1 + n2
+            window.alert('A soma dos valores é ' + String(s)) // concatençao
+            // Number + Number adiçao
+            // String + String para concatenaçao
+
+
+        </script>
+</body>
+</html>
