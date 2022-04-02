@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body onload="ola()">
+    <div id="div1" onmouseover="muda(this, '#f00')" onmouseout="muda(this, '#fff')"> </div>
+        <br>
+        <!-- <button onclick="alert('CFB Cursos')" onmouseover="muda(document.getElementById('div1'), '#00f')"> Clique aqui</button> -->
+        <button onclick="alert('CFB Cursos')" onmouseover="mudapos(this)"> Clique aqui</button>
+    <script>
+        function muda(obj, cor) {
+            obj.style.backgroundColor=cor;
+        }
+
+        function mudapos(obj){
+            obj.style.position='absolute';
+            obj.style.left=Math.random()*500+'px';
+            obj.style.top=Math.random()*500+'px';
+        }
+
+        function ola(){
+            var data = new Date();
+            var hora = data.getHours();
+            var txt = '';
+            if(hora < 12){
+                txt = 'Bom dia!';
+            } else if(hora < 18){
+                txt = 'Boa tarde!'
+            } else {
+                txt = 'Boa noite!';
+            }
+            alert('Ola, ' + txt);
+        }
+    </script>
+</body>
+</html>
