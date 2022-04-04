@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+#dv1{
+	width: 100px;
+	height: 100px;
+	border: 1px solid black;
+	background:white;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+}		
+</style>
+
+</head>
+
+<body>
+<div id="dv1"></div>
+
+
+<script>
+// posição X e Y da tela do seu monitor
+
+	posX = 0; // controla o deslocamento horizontal
+	posY = 0; // controla o deslocamento vertical
+
+
+		// função que ativa o confirm para realização da movimentação do quadrado
+			function onclick() {
+				const obj = document.getElementById('dv1');
+					obj.addEventListener('click',ativa);
+			}
+		// função para mexer o quadrado.
+			function ativa() {
+				conf = confirm('quer mexer o quadrado ?');
+				// se diferente de verdadeiro, a função será dada como cancelada.
+					if (!conf === true) {
+						return alert('evento cancelado');
+					}
+				// se a confirmação não for falsa, poderá ser movimentado o quadrado e ele ficará vermelho para mostrar que está ativo a função de deslocamento
+					else {
+						document.getElementById('dv1').style.background = 'red';
+						addEventListener('keydown',move);
+					}
+		
+			}
+		// função para mexer o quadrado pela tela
+			function move() {
+				this.posX;
+				this.posY;
+						const obj = document.getElementById('dv1');			
+						obj.style.background = 'red';
+						let tecla = event.keyCode;
+		// códigos da tecla para poder movimentar a div: '37 = esquerda' '38 = cima' '39 = direita' '40 = baixo'
+				switch (tecla) {
+					// move para esquerda
+						case 37:
+							posX -= 2;
+							obj.style.left = posX+'px';
+							break;
+					// move para cima
+						case 38:
+							posX -= 2;
+							obj.style.top = posX+'px';
+							break;
+					// move para direita
+						case 39:
+							posX += 2;
+							obj.style.left = posX+'px';
+							break;
+					// move para baixo
+						case 40:
+							posX += 2;
+							obj.style.top = posX+'px';
+							break;
+					// tecla espaço usada para parar a execução de um programa
+						case 32:
+							let conf = confirm('deseja parar de movimentar o quadrado ?');
+							// se verdadeiro, a função removerá os eventos e funções ativados anteriormente
+								if (conf == true) {
+									removeEventListener('keydown',move);
+									removeEventListener('click',onclick);
+									const obj = document.getElementById('dv1');
+									obj.style.background = 'white';
+								}
+								// se cancelar a confirmação, nada mudará na execução do programa
+								else {
+									return 0;
+								}	
+								break;
+					//em caso de algum erro
+						default:
+							console.log('vixi');
+							break;
+				}
+
+			}
+			// comando para esperar a página carregar e ativar o evento click
+			window.addEventListener('load',onclick);
+		
+
+</script>
+
+</body>
+</html>
