@@ -5,8 +5,94 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #div1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: #f00;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
 </head>
 <body>
+    <div id="div1"></div>
     
+    <script>
+        var px =0;
+        var py = 0;
+
+        function onclick() {
+            var obj = document.getElementById('div1');
+            obj.addEventListener('click',ativa);
+        }
+        function ativa() {
+            conf = confirm('Quer mexer o quadrado?');
+            if(!conf === true) {
+                return alert('evento cancelado');
+            } else {
+                document.getElementById('div1').style.background = 'red';
+                addEventListener('keydown', move);
+            }
+        }
+        function move(){
+
+            document.addEventListener('keydown',move);
+            var obj = document.getElementById('div1');
+            var tecla = event.keyCode;
+            // 37 = Seta para Esquerda
+            // 38 = Seta para Cima
+            // 39 = Seta para Direita
+            // 40 = Seta para Baixo
+            if(tecla == 37) {
+                px -= 10;
+                obj.style.left = px+'px';
+            } else if(tecla == 38) {
+                py -=10;
+                obj.style.top=py+"px";
+            }else if(tecla == 39) {
+                px +=10;
+                obj.style.left=px+"px";
+            }else if(tecla == 40) {
+                py +=10;
+                obj.style.top=py+"px";
+            }else if(tecla == 13) {
+                alert('Evento keydown Removido');
+                document.removeEventListener('keydown', move);
+                }
+            };
+
+            document.addEventListener('keydown',move);
+            window.addEventListener('load',onclick);
+
+        
+        //     //FUNÇAO ANONIMA
+        // document.addEventListener('keydown', function(event){
+        //     var obj = document.getElementById('div1');
+        //     var tecla = event.keyCode;
+        //     // 37 = Seta para Esquerda
+        //     // 38 = Seta para Cima
+        //     // 39 = Seta para Direita
+        //     // 40 = Seta para Baixo
+        //     if(tecla == 37) {
+        //         px -= 10;
+        //         obj.style.left = px+'px';
+        //     } else if(tecla == 38) {
+        //         py -=10;
+        //         obj.style.top=py+"px";
+        //     }else if(tecla == 39) {
+        //         px +=10;
+        //         obj.style.left=px+"px";
+        //     }else if(tecla == 40) {
+        //         py +=10;
+        //         obj.style.top=py+"px";
+        //     }
+        //     });
+        
+        
+        
+    </script>
 </body>
 </html>
