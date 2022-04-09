@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="txt"> CFB Cursos - Curso de Javascript</p>
+
+    <script>
+        var texto1 = document.getElementById('txt').innerHTML;
+        var texto2 = texto1;
+
+        var res = texto1.indexOf('a'); //retorna o posiçao do primeiro caractere
+        var res = texto1.lastIndexOf('t'); //retorna a posiçao do ultimo caractere encontrado
+        var res = texto1.localeCompare(texto2);
+        var res = texto1.slice(3,10);
+        var res = texto1.split('');
+        var res = texto1.substr(4,5)
+        var res = texto1.toLocaleLowerCase();
+        var res = texto1.toUpperCase();
+
+        document.write(res);
+
+        // if(res == 0){
+        //     document.write('Strings iguais'); //0
+        // } else {
+        //     document.write('Strings diferentes') //1
+        // }
+        // if(res < 0 ) {
+        //     document.write('Letra nao encontrada!')
+        // } else {
+        //     document.write(res)
+        // }
+
+        
+
+    </script>
+</body>
+</html>
