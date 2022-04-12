@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var janela;
+
+        function abre(){
+        janela =window.open('062pt2.html','_blank','width=300,height=300,left=300'); //abre um popout// _blank ou _self ou frame 'cfb'
+        }
+        function fecha(){
+            janela.close();
+        }
+    </script>
+
+    <button onclick="abre()">Abre Nova Janela</button>
+    <button onclick="fecha()">Fechar Nova Janela</button>
+    <iframe src="" name="cfb"> </iframe>
+</body>
+</html>
