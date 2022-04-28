@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f00;
+            color: #fff;
+        }
+        a{color: #fff;}
+    </style>
+    <script>
+        var aux = location.hash;
+        var dados = aux.split("#");
+        var v1 = dados[1];
+        var v2 = dados[2];
+        document.write(v1);
+        document.write("<br>");
+        var h = location.href;
+        document.write(h);
+        document.write("<hr>");
+        var o = location.origin; //protocolo.hostname,porta
+        document.write(o);
+        document.write("<hr>");
+        var p = location.pathname; //caminho
+        document.write(p);
+        document.write("<hr>");
+        var pr = location.protocol; //protocolo
+        document.write(pr);
+        document.write("<hr>");
+
+        aux=location.search;
+        dados=aux.split("?");
+        v1=dados[1].split("=")[1];
+        document.write(v1);
+
+        document.write("<hr>");
+    </script>
+</head>
+<body>
+    <h1>Pagina 2</h1>
+    <a href="index.html">Voltar</a>
+    
+</body>
+</html>

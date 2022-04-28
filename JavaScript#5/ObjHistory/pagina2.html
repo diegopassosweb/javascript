@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var painel,btnB,btnF,btnG;
+
+        function hB(){
+            window.history.back();
+        }
+        function hF(){
+            window.history.forward();
+        }
+        function hg(){
+            window.history.go(2);
+        }
+
+        function inicia() {
+            btnB = document.getElementById('btnBack');
+            btnF = document.getElementById('btnForward');
+            btnG = document.getElementById('btnback2');
+
+            btnB.addEventListener('click',hB);
+            btnF.addEventListener('click',hF);
+            btnG.addEventListener('click', hg);
+
+
+            painel= document.getElementById('info');
+            painel.innerHTML=history.length;
+        }
+        window.addEventListener('load',inicia);
+    </script>
+</head>
+<body>
+    <h3>PAGINA 2</h3>
+    <p id="info"></p>
+    <a href="index.html">Home</a>
+    <a href="pagina1.html">Pagina 1</a>
+    <a href="pagina2.html">Pagina 2</a>
+    <button id="btnBack">Voltar</button>
+    <button id="btnForward">Avançar</button>
+    <button id="btnback2">Voltar 2 casas</button>
+</body>
+</html>
